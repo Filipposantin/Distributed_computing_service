@@ -1,4 +1,4 @@
 # Distributed_computing_service
-Ingegneria informatica 
+Laboratorio di ingegneria informatica 
 
 Sviluppo di un simulatore per un generico sistema di calcolo distribuito volontario
