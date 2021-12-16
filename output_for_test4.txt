@@ -1,0 +1,75 @@
+Enter the filename to be opened
+../test4.txt
+
+COMMAND FOUND: WORK_UNITS 100
+ => Setting system work units
+
+COMMAND FOUND: VOLUNTEER_CONNECTED 20
+ => Connecting volunteer 20 to server 0
+
+COMMAND FOUND: VOLUNTEER_CONNECTED 21
+ => Connecting volunteer 21 to server 0
+
+COMMAND FOUND: VOLUNTEER_CONNECTED 22
+ => Connecting volunteer 22 to server 0
+
+COMMAND FOUND: VOLUNTEER_CONNECTED 23
+ => Connecting volunteer 23 to server 0
+
+COMMAND FOUND: VOLUNTEER_CONNECTED 24
+ => Connecting volunteer 24 to server 0
+
+COMMAND FOUND: TIME_STEP
+ => Advancing time by 1 unit
+Checking for underloaded servers...
+Checking for overloaded servers...
+Server 0 assigning work to volunteer 20
+Server 0 assigning work to volunteer 21
+Server 0 assigning work to volunteer 22
+Server 0 assigning work to volunteer 23
+Server 0 assigning work to volunteer 24
+
+COMMAND FOUND: PRINT_SYSTEM_STATUS
+ => =============== ACTIVE SERVERS ================
+Percentage of work completed: 0.00
+Server 0:
+Volunteers connected to Server 0 :
+Volunteer 20
+Volunteer 21
+Volunteer 22
+Volunteer 23
+Volunteer 24
+
+COMMAND FOUND: VOLUNTEER_DISCONNECTED 22
+ => Disconnecting volunteer 22 from Server 0
+
+COMMAND FOUND: VOLUNTEER_DISCONNECTED 21
+ => Disconnecting volunteer 21 from Server 0
+
+COMMAND FOUND: VOLUNTEER_DISCONNECTED 20
+ => Disconnecting volunteer 20 from Server 0
+
+COMMAND FOUND: PRINT_SYSTEM_STATUS
+ => =============== ACTIVE SERVERS ================
+Percentage of work completed: 0.00
+Server 0:
+Volunteers connected to Server 0 :
+Volunteer 24
+Volunteer 23
+
+COMMAND FOUND: TIME_STEP
+ => Advancing time by 1 unit
+Checking for underloaded servers...
+Checking for overloaded servers...
+Volunteer 24 carrying out work unit and communicating to server 0
+Volunteer 23 carrying out work unit and communicating to server 0
+
+COMMAND FOUND: PRINT_SYSTEM_STATUS
+ => =============== ACTIVE SERVERS ================
+Percentage of work completed: 2.00
+Server 0:
+Volunteers connected to Server 0 :
+Volunteer 24
+Volunteer 23
+
+Process finished with exit code 0

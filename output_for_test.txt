@@ -1,0 +1,132 @@
+Enter the filename to be opened
+../test.txt
+
+COMMAND FOUND: WORK_UNITS 200
+ => Setting system work units
+
+COMMAND FOUND: VOLUNTEER_CONNECTED 10
+ => Connecting volunteer 10 to server 0
+
+COMMAND FOUND: VOLUNTEER_CONNECTED 11
+ => Connecting volunteer 11 to server 0
+
+COMMAND FOUND: VOLUNTEER_CONNECTED 12
+ => Connecting volunteer 12 to server 0
+
+COMMAND FOUND: VOLUNTEER_CONNECTED 13
+ => Connecting volunteer 13 to server 0
+
+COMMAND FOUND: VOLUNTEER_CONNECTED 14
+ => Connecting volunteer 14 to server 0
+
+COMMAND FOUND: VOLUNTEER_CONNECTED 15
+ => Connecting volunteer 15 to server 0
+
+COMMAND FOUND: VOLUNTEER_CONNECTED 16
+ => Connecting volunteer 16 to server 0
+
+COMMAND FOUND: VOLUNTEER_CONNECTED 17
+ => Connecting volunteer 17 to server 0
+
+COMMAND FOUND: TIME_STEP
+ => Advancing time by 1 unit
+Checking for underloaded servers...
+Checking for overloaded servers...
+Server 0 found with 75% volunteers or more...
+ Turned on Server 1
+Migrating volunteer 17 from server 0 to server 1
+Migrating volunteer 16 from server 0 to server 1
+Migrating volunteer 15 from server 0 to server 1
+Migrating volunteer 14 from server 0 to server 1
+Server 0 assigning work to volunteer 10
+Server 0 assigning work to volunteer 11
+Server 0 assigning work to volunteer 12
+Server 0 assigning work to volunteer 13
+Server 1 assigning work to volunteer 17
+Server 1 assigning work to volunteer 16
+Server 1 assigning work to volunteer 15
+Server 1 assigning work to volunteer 14
+
+COMMAND FOUND: PRINT_SYSTEM_STATUS
+ => =============== ACTIVE SERVERS ================
+Percentage of work completed: 0.00
+Server 0:
+Volunteers connected to Server 0 :
+Volunteer 10
+Volunteer 11
+Volunteer 12
+Volunteer 13
+Server 1:
+Volunteers connected to Server 1 :
+Volunteer 17
+Volunteer 16
+Volunteer 15
+Volunteer 14
+
+COMMAND FOUND: VOLUNTEER_DISCONNECTED 12
+ => Disconnecting volunteer 12 from Server 0
+
+COMMAND FOUND: VOLUNTEER_DISCONNECTED 11
+ => Disconnecting volunteer 11 from Server 0
+
+COMMAND FOUND: VOLUNTEER_DISCONNECTED 10
+ => Disconnecting volunteer 10 from Server 0
+
+COMMAND FOUND: VOLUNTEER_DISCONNECTED 14
+ => Disconnecting volunteer 14 from Server 1
+
+COMMAND FOUND: VOLUNTEER_DISCONNECTED 15
+ => Disconnecting volunteer 15 from Server 1
+
+COMMAND FOUND: PRINT_SYSTEM_STATUS
+ => =============== ACTIVE SERVERS ================
+Percentage of work completed: 0.00
+Server 0:
+Volunteers connected to Server 0 :
+Volunteer 13
+Server 1:
+Volunteers connected to Server 1 :
+Volunteer 17
+Volunteer 16
+
+COMMAND FOUND: TIME_STEP
+ => Advancing time by 1 unit
+Checking for underloaded servers...
+Found Server 1 with 25% or less workload, trying to turn off...
+Migrating volunteer 16 from server 1 to server 0
+Migrating volunteer 17 from server 1 to server 0
+Checking for overloaded servers...
+Volunteer 13 carrying out work unit and communicating to server 0
+Volunteer 16 carrying out work unit and communicating to server 0
+Volunteer 17 carrying out work unit and communicating to server 0
+
+COMMAND FOUND: PRINT_SYSTEM_STATUS
+ => =============== ACTIVE SERVERS ================
+Percentage of work completed: 1.50
+Server 0:
+Volunteers connected to Server 0 :
+Volunteer 13
+Volunteer 16
+Volunteer 17
+
+COMMAND FOUND: TIME_STEP
+ => Advancing time by 1 unit
+Checking for underloaded servers...
+Checking for overloaded servers...
+Server 0 assigning work to volunteer 13
+Server 0 assigning work to volunteer 16
+Server 0 assigning work to volunteer 17
+Volunteer 13 carrying out work unit and communicating to server 0
+Volunteer 16 carrying out work unit and communicating to server 0
+Volunteer 17 carrying out work unit and communicating to server 0
+
+COMMAND FOUND: PRINT_SYSTEM_STATUS
+ => =============== ACTIVE SERVERS ================
+Percentage of work completed: 3.00
+Server 0:
+Volunteers connected to Server 0 :
+Volunteer 13
+Volunteer 16
+Volunteer 17
+
+Process finished with exit code 0

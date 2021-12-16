@@ -1,0 +1,93 @@
+Enter the filename to be opened
+../test3.txt
+
+COMMAND FOUND: WORK_UNITS 100
+ => Setting system work units
+
+COMMAND FOUND: VOLUNTEER_CONNECTED 234
+ => Connecting volunteer 234 to server 0
+
+COMMAND FOUND: VOLUNTEER_CONNECTED 235
+ => Connecting volunteer 235 to server 0
+
+COMMAND FOUND: VOLUNTEER_CONNECTED 226
+ => Connecting volunteer 226 to server 0
+
+COMMAND FOUND: VOLUNTEER_CONNECTED 220
+ => Connecting volunteer 220 to server 0
+
+COMMAND FOUND: VOLUNTEER_CONNECTED 221
+ => Connecting volunteer 221 to server 0
+
+COMMAND FOUND: VOLUNTEER_CONNECTED 222
+ => Connecting volunteer 222 to server 0
+
+COMMAND FOUND: VOLUNTEER_CONNECTED 223
+ => Connecting volunteer 223 to server 0
+
+COMMAND FOUND: VOLUNTEER_CONNECTED 224
+ => Connecting volunteer 224 to server 0
+
+COMMAND FOUND: TIME_STEP
+ => Advancing time by 1 unit
+Checking for underloaded servers...
+Checking for overloaded servers...
+Server 0 found with 75% volunteers or more...
+ Turned on Server 1
+Migrating volunteer 224 from server 0 to server 1
+Migrating volunteer 223 from server 0 to server 1
+Migrating volunteer 222 from server 0 to server 1
+Migrating volunteer 221 from server 0 to server 1
+Server 0 assigning work to volunteer 234
+Server 0 assigning work to volunteer 235
+Server 0 assigning work to volunteer 226
+Server 0 assigning work to volunteer 220
+Server 1 assigning work to volunteer 224
+Server 1 assigning work to volunteer 223
+Server 1 assigning work to volunteer 222
+Server 1 assigning work to volunteer 221
+
+COMMAND FOUND: PRINT_NODE_STATUS 224
+ => ============== Node Status =====================Volunteer Address: 224
+Number of work units completed: 0
+Currently work unit assigned: Yes
+
+COMMAND FOUND: PRINT_NODE_STATUS 233
+ => Error: Node not found
+COMMAND FOUND: TIME_STEP
+ => Advancing time by 1 unit
+Checking for underloaded servers...
+Checking for overloaded servers...
+Volunteer 234 carrying out work unit and communicating to server 0
+Volunteer 235 carrying out work unit and communicating to server 0
+Volunteer 226 carrying out work unit and communicating to server 0
+Volunteer 220 carrying out work unit and communicating to server 0
+Volunteer 224 carrying out work unit and communicating to server 1
+Volunteer 223 carrying out work unit and communicating to server 1
+Volunteer 222 carrying out work unit and communicating to server 1
+Volunteer 221 carrying out work unit and communicating to server 1
+
+COMMAND FOUND: PRINT_NODE_STATUS 224
+ => ============== Node Status =====================Volunteer Address: 224
+Number of work units completed: 1
+Currently work unit assigned: No
+
+COMMAND FOUND: PRINT_NODE_STATUS 233
+ => Error: Node not found
+COMMAND FOUND: PRINT_SYSTEM_STATUS
+ => =============== ACTIVE SERVERS ================
+Percentage of work completed: 8.00
+Server 0:
+Volunteers connected to Server 0 :
+Volunteer 234
+Volunteer 235
+Volunteer 226
+Volunteer 220
+Server 1:
+Volunteers connected to Server 1 :
+Volunteer 224
+Volunteer 223
+Volunteer 222
+Volunteer 221
+
+Process finished with exit code 0

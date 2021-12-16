@@ -1,0 +1,44 @@
+Enter the filename to be opened
+../test2.txt
+
+COMMAND FOUND: WORK_UNITS 3
+ => Setting system work units
+
+COMMAND FOUND: VOLUNTEER_CONNECTED 12
+ => Connecting volunteer 12 to server 0
+
+COMMAND FOUND: VOLUNTEER_CONNECTED 13
+ => Connecting volunteer 13 to server 0
+
+COMMAND FOUND: TIME_STEP
+ => Advancing time by 1 unit
+Checking for underloaded servers...
+Found Server 0 with 25% or less workload, trying to turn off...
+Error: can't turn off the Server 0 as not enough free slots to distribute volunteers
+Checking for overloaded servers...
+Server 0 assigning work to volunteer 12
+Server 0 assigning work to volunteer 13
+
+COMMAND FOUND: PRINT_NODE_STATUS 12
+ => ============== Node Status =====================Volunteer Address: 12
+Number of work units completed: 0
+Currently work unit assigned: Yes
+
+COMMAND FOUND: TIME_STEP
+ => Advancing time by 1 unit
+Checking for underloaded servers...
+Found Server 0 with 25% or less workload, trying to turn off...
+Error: can't turn off the Server 0 as not enough free slots to distribute volunteers
+Checking for overloaded servers...
+Volunteer 12 carrying out work unit and communicating to server 0
+Volunteer 13 carrying out work unit and communicating to server 0
+
+COMMAND FOUND: PRINT_SYSTEM_STATUS
+ => =============== ACTIVE SERVERS ================
+Percentage of work completed: 66.67
+Server 0:
+Volunteers connected to Server 0 :
+Volunteer 12
+Volunteer 13
+
+Process finished with exit code 0
